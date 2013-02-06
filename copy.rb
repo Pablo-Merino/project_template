@@ -45,5 +45,8 @@ sh "cd #{gem_name} && (bundle check || bundle) && bundle exec rake"
 # commit everything into 'initial'
 sh "cd #{gem_name} && git init && git add . && git commit -m 'initial by http://github.com/grosser/project_template'"
 
+# make the bin executable
+sh "cd #{gem_name} && chmod +x ./bin/#{gem_name}"
+
 puts "#{gem_name} is now ready at ./#{gem_name}"
 
