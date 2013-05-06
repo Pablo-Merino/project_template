@@ -1,5 +1,4 @@
-source :rubygems
-gemspec
+source 'https://rubygems.org'
 
 gem "bump"
 gem "rake"
