@@ -1,4 +1,4 @@
-module GEM_CLASS_NA;E
+module GEM_CLASS_NAME
 	module Logger
 		# log-level constant
 		FATAL, ERROR, WARN, INFO, DEBUG, CREATED = 1, 2, 3, 4, 5, 6
