@@ -1,3 +1,4 @@
+require 'colored'
 module GEM_CLASS_NAME
 	module Logger
 		# log-level constant
