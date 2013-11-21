@@ -8,6 +8,7 @@ Gem::Specification.new name, GEM_CLASS_NAME::VERSION do |s|
 	s.email = "AUTHOR_EMAIL"
 	s.homepage = "http://github.com/AUTHOR_GITHUB/#{name}"
 	s.files = `git ls-files`.split("\n")
+	s.executables   = `ls bin/*`.split("\n").map{ |f| File.basename(f) }
 	s.license = "MIT"
 	s.add_dependency('active_support', ['~> 3.0.0'])
 	s.add_dependency("colored", ["~> 1.2"])  
